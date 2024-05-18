@@ -6,9 +6,9 @@ services:
     restart: "always"
     tty: true
     ports:
-      - "3000:3000"
+      - "443:443"
       - "2000-2020:2000-2020"
       - "10000-10100:10000-10100"
     volumes:
-      - "/rahul/my/src:/usr/src/"
+      - "./:/usr/src/"
 
