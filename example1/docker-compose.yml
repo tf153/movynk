@@ -5,9 +5,10 @@ services:
     image: "ubuntu"
     restart: "always"
     tty: true
+    command: bash -c "cd /usr/src/ && npm start"
     ports:
       - "443:443"
-      - "2000-2020:2000-2020"
+      - "2000-2040:2000-2040"
       - "10000-10100:10000-10100"
     volumes:
       - "./:/usr/src/"
